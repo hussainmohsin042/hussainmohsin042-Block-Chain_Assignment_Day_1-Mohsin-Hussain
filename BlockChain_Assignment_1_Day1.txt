@@ -1,0 +1,49 @@
+#Assignment No 1:
+
+Q1. What is your understanding of Block-chain?
+
+a)Block-chain is a continuous growing ledger keeping a permanent record in a secure,chronological and immutable way in decentralized distributed network.
+b)Block-chain is a a mixture of two technologies i.e Distributed Database and Cryptography where information is:
+Verifiable
+Tamper-proof
+Unchangeable
+Immutable
+
+
+Q2. What is the core problem block-chain trying to solve?
+
+Block-chain is trying to solve the core problems like:
+Authenticity
+Security
+Need of powerful third party to trust
+
+
+Q3. What are the few features which block-chain will give u?
+
+Block-chain will give us the features like:
+Verifiable
+Tamper-proof
+Unchangeable
+Immutable
+
+
+Q4. What all things does a Block Contain?
+
+A Block Number
+A Block contains data(current information/transaction)
+Fingerprint
+Mining key
+
+Q5. How is the verifiability of Block-chain is been attained ?
+
+Verifiability of block chain is achieved by the following way as below:
+
+Block 1
+0 + new data = Fingerprint 1
+
+Block 2
+Fingerprint 1 + new data = Fingerprint 2
+
+and this chain continues.
+
+Simply we can say with the help of Fingerprint we can validates the data among all the blocks.
