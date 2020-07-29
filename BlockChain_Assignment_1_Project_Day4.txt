@@ -1,0 +1,45 @@
+pragma solidity ^0.4.21; 
+
+// DAY-4 Project ©NileshSankrityayan
+
+//Transaction Hash: 0x1789eaa59896affdbb66042d5991ec9da23216877090d9197266825f43f7a314
+//Contract Address: 0xD5613FC2606ee2444D42Fe2188BBee011f853462
+//https://ropsten.etherscan.io/address/0xd5613fc2606ee2444d42fe2188bbee011f853462
+
+contract ReportCard {
+    string public name;
+    uint public rollNumber;
+    uint public batch;
+    uint sub1;
+    uint sub2;
+    uint sub3;
+    uint sub4;
+    uint totalMarks;
+    uint minMarks;
+    string public status;
+    
+
+    function ReportCard(string studentName, uint studentRollNo, uint studentBatch, uint sub1_Marks, uint sub2_Marks, uint sub3_Marks, uint sub4_Marks) public{
+        
+        name = studentName;
+        rollNumber = studentRollNo;
+        batch = studentBatch;
+        sub1 = sub1_Marks; 
+        sub2 = sub2_Marks;
+        sub3 = sub3_Marks;
+        sub4 = sub4_Marks;
+        totalMarks = (sub1+sub2+sub3+sub4); //This gives the total marks of all the 4 subjects
+        minMarks = 150;  //I've set minimum passing marks to 150 out of 400(each subject is of 100 marks)
+        
+        //The if-else statement below determines the status of the student on the basis of his total marks
+        if (totalMarks >= minMarks ) status = "Pass";
+        else status = "Fail";
+        
+    }
+    
+    function getResultOfStudent() public view returns (string studentName, uint studentRollNo, uint studentBatch, uint sub1_Marks, uint sub2_Marks, uint sub3_Marks, uint sub4_Marks, uint total_Marks, string Status)  {
+        return(name,rollNumber,batch,sub1,sub2,sub3,sub4,totalMarks,status);
+    }
+    
+}
+ 

@@ -1,0 +1,17 @@
+1.Ethereum:
+
+2.Smart Contract:
+---> are a place 
+
+---> code executed on a piece of network.
+
+3.Solidity Code,
+
+  Hyper ledger used by large organisation
+  Ethereum used by small industries
+  
+  Top 10 in demand skills in 2020:
+  https://learning.linkedin.com/blog/learning-thought-leadership/most-in-demand-skills-2020
+  
+  
+  https://amemail.deloitte.com/
